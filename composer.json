@@ -1,0 +1,20 @@
+{
+  "name": "bebaps/fresh-start-plugin",
+  "description": "A base WordPress plugin to house your custom post types, taxonomies, ACF fields, etc.",
+  "type": "wordpress-plugin",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "email": "info@alexanderpersky.com",
+      "name": "Alexander Persky"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {},
+  "require-dev": {}
+}
