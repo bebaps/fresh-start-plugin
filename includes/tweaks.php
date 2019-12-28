@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
  * @method _fs_disable_wp_emojicons
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 function _fs_disable_wp_emojicons()
 {
@@ -33,7 +33,7 @@ function _fs_disable_wp_emojicons()
  * @param  mixed  $plugins  Plugins using TinyMCE
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 function _fs_disable_emojicons_tinymce($plugins)
 {
@@ -50,7 +50,7 @@ add_action('init', '_fs_disable_wp_emojicons');
  * Remove any automatic formatting from the editor.
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 remove_filter('the_content', 'wptexturize');
 remove_filter('the_excerpt', 'wptexturize');
@@ -59,7 +59,7 @@ remove_filter('the_excerpt', 'wptexturize');
  * Remove stupid widgets.
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'rsd_link');
@@ -69,7 +69,7 @@ remove_action('wp_head', 'wp_generator');
  * Remove stupid meta boxes.
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 function _fs_remove_meta_boxes()
 {
@@ -96,7 +96,7 @@ add_action('admin_init', '_fs_remove_meta_boxes');
  * @method _fs_admin_notifications
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 function _fs_admin_notifications()
 {
@@ -116,7 +116,7 @@ add_action('plugins_loaded', '_fs_admin_notifications');
  * Remove some more stupid standard widgets.
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 function _fs_remove_widgets()
 {
@@ -137,7 +137,7 @@ add_action('widgets_init', '_fs_remove_widgets');
  * @return string The updated Read More string.
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 function _fs_read_more_excerpt($more)
 {
@@ -150,7 +150,7 @@ add_filter('excerpt_more', '_fs_read_more_excerpt');
  * Remove even more stupid widgets.
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 function _fs_wpdocs_remove_dashboard_widgets()
 {

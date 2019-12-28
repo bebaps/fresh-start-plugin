@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
  * @param  boolean  $die   If the page should die or not after the code is examined.
  *
  * @package Fresh Start
- * @since  1.0.0
+ * @since   1.0.0
  */
 function _fs_debug($code, $die = false)
 {
